@@ -1,0 +1,11 @@
+loot = {'Anime Goku': 20, 'Anime Naruto Uzumaki': 46, 'Anime Monkey D. Luffy': 32, 'Anime Ichigo Kurosaki': 43, 'Anime Saitama': 37, 'Anime Edward Elric': 32, 'Anime Light Yagami': 6, 'Anime Eren Yeager': 83, 'Anime Levi Ackerman': 54, 'Anime Spike Spiegel': 39, 'Anime Mikasa Ackerman': 97, 'Anime Vegeta': 73, 'Anime Lelouch Lamperouge': 34, 'Anime Kakashi Hatake': 38, 'Anime Itachi Uchiha': 45, 'Anime Killua Zoldyck': 50, 'Anime Gon Freecss': 52, 'Anime Roronoa Zoro': 81, 'Anime Gintoki Sakata': 91, 'Anime Shinji Ikari': 77, 'Anime Rei Ayanami': 88, 'Anime Asuka Langley Soryu': 90, 'Anime L': 80, 'Anime Natsu Dragneel': 32, 'Anime Lucy Heartfilia': 19, 'Anime Erza Scarlet': 30, 'Anime Hinata Hyuga': 50, 'Anime Nezuko Kamado': 72, 'Anime Tanjiro Kamado': 38, 'Anime Edward Newgate': 22, 'Anime Trafalgar D. Water Law': 91, 'Anime Sanji Vinsmoke': 19, 'Anime Portgas D. Ace': 82, 'Anime Rukia Kuchiki': 30, 'Anime Himura Kenshin': 44, 'Anime Shishio Makoto': 23, 'Anime Sesshomaru': 74, 'Anime Inuyasha': 94, 'Anime Kagome Higurashi': 6, 'Anime Sango': 88, 'Anime Miroku': 10, 'Anime Guts': 19, 'Anime Misato Katsuragi': 79, 'Anime Sakura Haruno': 96, 'Anime Shinichi Kudo': 92, 'Anime Kazuma Satou': 16, 'Anime Megumin': 6, 'Anime Aqua': 77, 'Anime Dark Magician Girl': 64, 'Anime Yugi Muto': 70, 'Anime Rin Tohsaka': 96, 'Anime Saber': 63, 'Anime Kirito': 11, 'Anime Asuna Yuuki': 24, 'Anime Eren Jaeger': 8, 'Anime Armin Arlert': 22, 'Anime Tanjirou Kamado': 74, 'Anime Zenitsu Agatsuma': 57, 'Anime Katsuki Bakugou': 27, 'Anime Izuku Midoriya': 50, 'Anime Shouto Todoroki': 20, 'Anime Hisoka': 58, 'Anime Kurapika': 81, 'Anime Genos': 62, 'Anime Mob': 41, 'Anime Reigen Arataka': 47, 'Anime Faye Valentine': 91, 'Anime Alphonse Elric': 33, 'Anime Roy Mustang': 70, 'Anime Luffy': 49, 'Anime Zoro': 56, 'Anime Nami': 94, 'Anime Sanji': 38, 'Anime Usopp': 21, 'Anime Chopper': 89, 'Anime Robin': 85, 'Anime Franky': 56, 'Anime Brook': 58}
+
+# Get the minimum and maximum price preferences from the user
+min_price = float(input("Minimum price: "))
+max_price = float(input("Maximum price: "))
+
+# Find and print the anime loot within the specified price range
+print("The following loot falls within your price range...")
+for anime, price in loot.items():
+    if min_price <= price <= max_price:
+        print(anime)
